@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zaifi059</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #121212;
+      color: #41c1fb;
+      position: relative;
+    }
+
+    section::after {
+      content: "Zaifi";
+      position: absolute;
+      font-size: 6em;
+      color: rgba(255, 255, 255, 0.1);
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: zaifiAnimation 5s linear infinite;
+    }
+
+    @keyframes zaifiAnimation {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        opacity: 0.2;
+      }
+      50% {
+        transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+        opacity: 0.2;
+      }
+    }
+
+    .bowl {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #ffffff1a;
+      border-radius: 50%;
+      border: 8px solid transparent;
+      animation: animate 5s linear infinite;
+      transform-origin: bottom center;
+    }
+
+    @keyframes animate {
+      /* Your existing animation keyframes... */
+    }
+
+    .liquid {
+     
+    }
+
+    .shadow {
+      
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="shadow"></div>
+    <div class="bowl">
+      <div class="liquid"></div>
+    </div>
+  </section>
+</body>
+</html>
